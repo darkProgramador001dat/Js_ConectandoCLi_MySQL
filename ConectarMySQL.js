@@ -20,7 +20,7 @@ const conn = mysq.createConnection({
 conn.connect((err) => {
   if(err) // Callback, erro ao conectar, verifique as credencias corretamente.
   {
-    console.log('Erro ao conectar ao MySql: ' + err.stack);  // erro retornado.
+    console.error('Erro ao conectar ao MySql: ' + err.stack);  // erro retornado.
     return;
   }
 
